@@ -1,46 +1,323 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sarah Canto Hyatt — PhD Student at UCSB</title>
 
-<html>
-    <head>
-        <meta charset = "utf-8">
-        <title>Sarah Canto Hyatt</title>
-    </head>
-    <body>
-        <h1>Sarah Canto Hyatt</h1>
-        <img src = "image.jpg" width="12%" height="12%"/>
-        <p>I am currently a PhD Student at University of California, Santa Barbara(<a href="https://www.ucsb.edu/">UCSB</a>).<br>
-          I am a member of the UCSB Programming Languages Lab with <a href="https://hardekbc.github.io/">Ben Hardekopf</a></p>
-        <p><a href="CV.pdf">Link to my CV</a></p>
-        <h2>Research</h2>
-        <p>I do research in programming languages, computer architecture, and testing.</p>
-        <h3>Publications</h3>
-        <ul>
-            <li>Breccia: A Functional DSL Compiled to Egglog for Test Input Generation<br>Peter Boyland, Sarah Canto Hyatt, Kyle Dewey, Ben Hardekopf<br>ACM International Symposium on Functional and Logic Programming (FLOPS) 2026 (to appear)</li>
-            <li><a href="https://doi.org/10.1016/j.scico.2026.103465">
-Mutation-based fuzzer for the swift compiler</a><br>Sarah Canto Hyatt, Kyle Dewey<br>Science of Computer Programming (SCP) 2026</li>
-            <li><a href="http://dx.doi.org/10.1109/icst62969.2025.10989032">Mutation-Based Fuzzing of the Swift Compiler with Incomplete Type Information</a><br>Sarah Canto Hyatt, Kyle Dewey<br>International Conference on Software Testing, Verification and Validation (ICST) 2025</li>
-        </ul>
-        <h2>Education</h2>
-        <ul>
-            <li>PhD in Computer Science, University of California, Santa Barbara - In Progress</li>
-            <li>Master of Science in Computer Science, California State University, Northridge - 2023</li>
-            <li>Bachelor of Science in Computer Science, California State University, Northridge - 2021</li>
-        </ul>
-        <h2>Teaching</h2>
-        <h3>Current TA Course</h3>
-        <p> Problem Solving with Computers II (CMPSC 24) at UCSB</p>
-        <h3>Past TA Courses</h3>
-        <ul>
-						<li>Translation of Programming Languages (CMPSC 160) at UCSB - Fall 2026</li>
-            <li>Problem Solving with Computers II (CMPSC 24) at UCSB - Spring 2025, Winter 2026</li>
-            <li>Problem Solving with Computers I (CMPSC 16) at UCSB - Fall 2024</li>
-            <li>Introduction to Computer Science (CMPSC 8) at UCSB - Winter 2025, Summer 2025</li>
-        </ul>
-        <h2>Contact</h2>
-        <p><b>Email:</b> sarahcantohyatt@ucsb.edu</p>
-        <p><b>Office Hours:</b></p>
-        <ul>
-            <li>Wednesdays/Fridays 4PM-6PM Phelps 3525</li>
-        </ul>
-    </body>
+    <meta name="description" content="Sarah Canto Hyatt is a PhD student at UC Santa Barbara in the Programming Languages Lab. Research in programming languages, computer architecture, and software testing.">
+    <meta name="keywords" content="Sarah Canto Hyatt, UCSB, programming languages, compilers, fuzzing, Swift compiler, PhD, computer science">
+    <meta name="author" content="Sarah Canto Hyatt">
+    <link rel="canonical" href="https://sarahcantohyatt.github.io/">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sarah Canto Hyatt — PhD Student at UCSB">
+    <meta property="og:description" content="PhD student at UC Santa Barbara researching programming languages, compilers, and software testing.">
+    <meta property="og:url" content="https://sarahcantohyatt.github.io/">
+    <meta property="og:image" content="https://sarahcantohyatt.github.io/image.JPG">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #fbf6ee;
+            --bg-accent: #f3ead9;
+            --card: #ffffff;
+            --text: #3a2e3c;
+            --muted: #7b6d7e;
+            --accent: #9d7ab8;
+            --accent-soft: #e8ddf0;
+            --rose: #b66b86;
+            --sage: #9bb39b;
+            --border: #ede2d0;
+            --shadow: 0 2px 12px rgba(122, 96, 130, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            font-family: 'Nunito', system-ui, sans-serif;
+            font-size: 17px;
+            line-height: 1.65;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 10% 0%, #f7e9f2 0%, transparent 40%),
+                radial-gradient(circle at 90% 10%, #eee4f5 0%, transparent 45%),
+                var(--bg);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            padding: 32px;
+            background: var(--card);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 28px;
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--accent-soft);
+            flex-shrink: 0;
+        }
+
+        .header-text { flex: 1; min-width: 0; }
+
+        h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 600;
+            font-size: 2.1rem;
+            margin: 0 0 6px;
+            letter-spacing: -0.01em;
+            color: var(--text);
+        }
+
+        h1::after {
+            content: " ✿";
+            color: var(--rose);
+            font-size: 0.8em;
+        }
+
+        .tagline {
+            margin: 0 0 10px;
+            color: var(--muted);
+            font-size: 0.98rem;
+        }
+
+        .cv-link {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.15s, transform 0.15s;
+        }
+
+        .cv-link:hover {
+            background: var(--accent);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        section {
+            background: var(--card);
+            border-radius: 20px;
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0 0 14px;
+            color: var(--accent);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 18px 0 8px;
+            color: var(--rose);
+        }
+
+        p { margin: 0 0 10px; }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-soft);
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        a:hover {
+            color: var(--rose);
+            border-bottom-color: var(--rose);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding: 10px 0 10px 22px;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        ul li:last-child { border-bottom: none; }
+
+        ul li::before {
+            content: "❀";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: var(--sage);
+            font-size: 0.85rem;
+        }
+
+        .pub-venue {
+            display: block;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 2px;
+        }
+
+        .pub-authors {
+            display: block;
+            color: var(--muted);
+            font-size: 0.92rem;
+            margin-top: 2px;
+        }
+
+        .contact-grid p { margin: 6px 0; }
+
+        .contact-grid b { color: var(--accent); }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 16px 60px; }
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+            section { padding: 22px 20px; }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sarah Canto Hyatt",
+      "url": "https://sarahcantohyatt.github.io/",
+      "image": "https://sarahcantohyatt.github.io/image.JPG",
+      "jobTitle": "PhD Student",
+      "email": "sarahcantohyatt@ucsb.edu",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Santa Barbara"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "California State University, Northridge"
+        }
+      ],
+      "knowsAbout": ["Programming Languages", "Compilers", "Software Testing", "Fuzzing", "Computer Architecture"]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="image.JPG" alt="Portrait of Sarah Canto Hyatt">
+            <div class="header-text">
+                <h1>Sarah Canto Hyatt</h1>
+                <p class="tagline">
+                    PhD Student at <a href="https://www.ucsb.edu/">UC Santa Barbara</a>, member of the UCSB Programming Languages Lab with <a href="https://hardekbc.github.io/">Ben Hardekopf</a>.
+                </p>
+                <a class="cv-link" href="CV.pdf">View CV →</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Research</h2>
+            <p>I do research in programming languages, computer architecture, and testing.</p>
+
+            <h3>Publications</h3>
+            <ul>
+                <li>
+                    Breccia: A Functional DSL Compiled to Egglog for Test Input Generation
+                    <span class="pub-authors">Peter Boyland, Sarah Canto Hyatt, Kyle Dewey, Ben Hardekopf</span>
+                    <span class="pub-venue">ACM International Symposium on Functional and Logic Programming (FLOPS) 2026 — to appear</span>
+                </li>
+                <li>
+                    <a href="https://doi.org/10.1016/j.scico.2026.103465">Mutation-based fuzzer for the Swift compiler</a>
+                    <span class="pub-authors">Sarah Canto Hyatt, Kyle Dewey</span>
+                    <span class="pub-venue">Science of Computer Programming (SCP) 2026</span>
+                </li>
+                <li>
+                    <a href="http://dx.doi.org/10.1109/icst62969.2025.10989032">Mutation-Based Fuzzing of the Swift Compiler with Incomplete Type Information</a>
+                    <span class="pub-authors">Sarah Canto Hyatt, Kyle Dewey</span>
+                    <span class="pub-venue">International Conference on Software Testing, Verification and Validation (ICST) 2025</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>PhD in Computer Science, University of California, Santa Barbara — <em>in progress</em></li>
+                <li>M.S. in Computer Science, California State University, Northridge — 2023</li>
+                <li>B.S. in Computer Science, California State University, Northridge — 2021</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Teaching</h2>
+
+            <h3>Current TA Course</h3>
+            <p>Problem Solving with Computers II (CMPSC 24) at UCSB</p>
+
+            <h3>Past TA Courses</h3>
+            <ul>
+                <li>Translation of Programming Languages (CMPSC 160) at UCSB — Fall 2025</li>
+                <li>Problem Solving with Computers II (CMPSC 24) at UCSB — Spring 2025, Winter 2026</li>
+                <li>Problem Solving with Computers I (CMPSC 16) at UCSB — Fall 2024</li>
+                <li>Introduction to Computer Science (CMPSC 8) at UCSB — Winter 2025, Summer 2025</li>
+            </ul>
+        </section>
+
+        <section class="contact-grid">
+            <h2>Contact</h2>
+            <p><b>Email:</b> <a href="mailto:sarahcantohyatt@ucsb.edu">sarahcantohyatt@ucsb.edu</a></p>
+            <p><b>Office Hours:</b> Wednesdays &amp; Fridays, 4–6 PM, Phelps 3525</p>
+        </section>
+
+        <footer>
+            ♡ Thanks for visiting ♡
+        </footer>
+    </div>
+</body>
 </html>
